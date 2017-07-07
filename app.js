@@ -22,6 +22,11 @@ app.get('/about', function (req, res) {
   res.render('about', { site: site, title: 'About Me', url: req.url })
 })
 
+//About Me page 
+app.get('/cv', function (req, res) {
+  res.render('cv', { site: site, title: 'My CV', url: req.url })
+})
+
 //Projects page, displays all projects
 app.get('/projects', function (req, res) {
   //Scan projects folder to get list of projects
@@ -45,6 +50,7 @@ app.use('/css', express.static('public/css'))
 app.use('/js', express.static('public/js'))
 app.use('/fonts', express.static('public/fonts'))
 app.use('/images', express.static('public/images'))
+app.use('/files', express.static('public/files'))
 
 //Some 404 handling
 app.get("/*", function (req, res, next) {

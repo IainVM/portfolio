@@ -7,6 +7,11 @@
             "label": "About Me"
         },
         {
+            "url": "/cv",
+            "icon": "description",
+            "label": "CV"
+        },
+        {
             "url": "/projects",
             "icon": "build",
             "label": "Projects"
