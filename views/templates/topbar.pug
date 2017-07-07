@@ -4,12 +4,12 @@ div(class="navbar-fixed")
         div(class="nav-wrapper")
             a(href="#" data-activates="slide-out" class="button-collapse")
                 i(class="material-icons") menu
-            a(href="/" id="logo-containger" class="brand-logo") IainVM.io - #{title}
+            a(href="/" id="logo-containger" class="brand-logo") #{site.name} - #{title}
         
             ul(class="right")
                 li
                     div(class="valign-wrapper")
-                        a(href="https://github.com/iainvm")
+                        a(href="#{site.contact.github}")
                             i(class="shaded socicon-github")
                 li(class="hide-on-med-and-down")
                     form

@@ -8,7 +8,7 @@ ul(id="slide-out" class="fixed side-nav")
             a(href="#")
                 img( class="circle" src="images/prof.jpg")
             a(href="#")
-                span(class="white-text name") Iain Majer
-            a(href="mailto:iain.v.majer@gmail.com")
-                span(class="white-text email") iain.v.majer@gmail.com
+                span(class="white-text name") #{site.contact.name}
+            a(href="mailto:#{site.contact.email}")
+                span(class="white-text email") #{site.contact.email}
     include buttons

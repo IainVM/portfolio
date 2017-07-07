@@ -1,20 +1,24 @@
 //Set up Express for handling routing
 var express = require('express')
 var app = express()
-//Server Settings
-var config = require('./site.json')
+
+//Create locals for use during app
+app.locals.moment = require('moment')
+
+//Site Settings
+var site = require('./site.json')
 
 //Set up pug as the view engine
 app.set('view engine', 'pug')
 
 //Home page
 app.get('/', function (req, res) {
-  res.render('home', {config: config, title:'Home', page:'home' })
+  res.render('home', {site: site, title:'Home', page:'home'})
 })
 
 //About Me page 
 app.get('/about', function (req, res) {
-  res.render('about', {config: config, title:'About Me', page:'about' })
+  res.render('about', {site: site, title:'About Me', page:'about'})
 })
 
 //Static content handling

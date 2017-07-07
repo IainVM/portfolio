@@ -1,18 +1,27 @@
 {
-    "name":"IainVM.io",
-    "navi":[
+    "name": "IainVM.io",
+    "navi": [
         {
-            "page":"about",
-            "url":"/about",
-            "icon":"info",
-            "label":"About Me!"
+            "page": "about",
+            "url": "/about",
+            "icon": "info",
+            "label": "About Me"
         },
         {
-            "page":"projects",
-            "url":"/Projects",
-            "icon":"build",
-            "label":"Projects"
+            "page": "projects",
+            "url": "/projects",
+            "icon": "build",
+            "label": "Projects"
         }
-    ]
-    
+    ],
+    "contact": {
+        "first_name": "Iain",
+        "last_name": "Majer",
+        "name": "Iain Majer",
+        "dob":"1993-11-14",
+        "email": "Iain.V.Majer@gmail.com",
+        "mobile": "07412454511",
+        "github": "https://github.com/iainvm",
+        "gitlab": "https://git.hackedtogether.org/iainvm"
+    }
 }
