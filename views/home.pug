@@ -1,0 +1,16 @@
+extends templates/main.pug
+
+block style
+    link(rel='stylesheet', href='css/home.css')
+
+block content
+    div(id="index-banner" class="parallax-container")
+        div(class="section")
+            div(class="container")
+                h1(class="header center teal-text text-lighten-2") Porting Iain to the Internet
+                div(class="row center")
+                    h5(class="header col s12 light") A showcase/blog for personal projects
+                div(class="row center")
+                    a(href="/about" id="download-button" class="btn-large hoverable waves-effect waves-light teal lighten-1") About Me
+        div(class="parallax")
+            img(src="images/background1.jpg" alt="Unsplashed background img 1")

@@ -1,0 +1,18 @@
+{
+    "name":"IainVM.io",
+    "navi":[
+        {
+            "page":"about",
+            "url":"/about",
+            "icon":"info",
+            "label":"About Me!"
+        },
+        {
+            "page":"projects",
+            "url":"/Projects",
+            "icon":"build",
+            "label":"Projects"
+        }
+    ]
+    
+}

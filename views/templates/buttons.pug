@@ -1,0 +1,6 @@
+//- The buttons that will display on the side navigation bar
+each button in config['navi']
+    li
+        a(class=page == button['page'] ? "grey lighten-1" : "" class="waves-effect" href=button['url'])
+            i(class="material-icons")=button['icon']
+            p=button['label']
