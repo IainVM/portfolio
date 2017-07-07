@@ -1,5 +1,8 @@
 extends templates/main.pug
 
+block style
+    link(rel="stylesheet", href="/css/home.css")
+
 block content
     div(id="index-banner" class="parallax-container")
         div(class="section")
@@ -11,3 +14,6 @@ block content
                     a(href="/about" id="download-button" class="btn-large hoverable waves-effect waves-light teal lighten-1") About Me
         div(class="parallax")
             img(src="images/background1.jpg" alt="Unsplashed background img 1")
+
+block scripts
+     script(src="js/parallax_init.js")

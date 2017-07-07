@@ -1,3 +1,36 @@
+.nav-wrapper, #main, footer {
+  padding-left: 300px; }
 
+body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  background-color: #4db6ac; }
+
+.button-collapse {
+  color: #26a69a; }
+
+.shaded {
+  color: rgba(0, 0, 0, 0.5) !important; }
+
+nav .brand-logo {
+  color: #444;
+  padding-left: 30px !important; }
+nav ul a {
+  font-size: 3rem;
+  color: #444; }
+
+#main {
+  flex: 1 0 auto; }
+
+.container {
+  width: 90%; }
+
+footer.page-footer {
+  margin: 0; }
+
+@media only screen and (max-width: 992px) {
+  .nav-wrapper, #main, footer {
+    padding-left: 0px; } }
 
 /*# sourceMappingURL=main.css.map */

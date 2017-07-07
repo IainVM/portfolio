@@ -6,12 +6,11 @@ html
     title #{site.name} - #{title}
 
     //- CSS
-    link(rel="stylesheet", href="https://d1azc1qln24ryf.cloudfront.net/114779/Socicon/style-cf.css?rd5re8")
+    link(rel="stylesheet", href="/css/socicon.css")
     link(rel="stylesheet", href="https://fonts.googleapis.com/icon?family=Material+Icons")
-    link(rel="stylesheet", href="css/materialize.css")
+    link(rel="stylesheet", href="/css/materialize.css")
     //- Template styles
-    link(rel="stylesheet", href="css/main.css")
-    link(rel="stylesheet", href=page+".css")
+    link(rel="stylesheet", href="/css/main.css")
     //- Page specific styles
     block style
 
@@ -27,10 +26,10 @@ html
     //- Footer
     include footer
 
+    //- Scripts used for the template
+    script(src="https://code.jquery.com/jquery-2.1.1.min.js")
+    script(src="/js/materialize.js")
+    script(src="/js/init.js")
     //- Pages scripts
     //- They are loaded after the pages visuals so that the loading time doesn"t stop the user seeing the page
     block scripts
-    //- Scripts used for the template
-    script(src="https://code.jquery.com/jquery-2.1.1.min.js")
-    script(src="js/materialize.js")
-    script(src="js/init.js")

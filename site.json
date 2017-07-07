@@ -2,13 +2,11 @@
     "name": "IainVM.io",
     "navi": [
         {
-            "page": "about",
             "url": "/about",
             "icon": "info",
             "label": "About Me"
         },
         {
-            "page": "projects",
             "url": "/projects",
             "icon": "build",
             "label": "Projects"

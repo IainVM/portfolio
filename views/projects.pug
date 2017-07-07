@@ -1,5 +1,18 @@
 extends templates/main.pug
 
-block vars
+block style
+    link(rel="stylesheet", href="/css/projects.css")
 
 block content
+    div(class="grid")
+        each project,dir in projects
+            a(href="/projects/"+dir class="")
+                div(class="card blue-grey darken-1 grid-item")
+                    div(class="card-content white-text")
+                        span(class="card-title") #{project.name} - #{project.version}
+                        p #{project.description}
+
+
+block scripts
+    script(src="/js/masonry.pkgd.min.js")
+    script(src="/js/masonry_init.js")
