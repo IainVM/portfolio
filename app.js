@@ -4,10 +4,10 @@ var app = express()
 
 //Create locals for use during app
 app.locals.moment = require('moment')
-var fs = require('fs')
 
 //Site Settings
 var site = require('./site.json')
+var utils = require('./utils.js')
 
 //Set up pug as the view engine
 app.set('view engine', 'pug')
@@ -29,28 +29,28 @@ app.get('/cv', function (req, res) {
 
 //Projects page, displays all projects
 app.get('/projects', function (req, res) {
+  //Go retreive the projects and their info.json
+  var projects = utils.getProjects();
+  res.render('projects', { site: site, title: 'My Projects', url: req.url, projects: projects });
+})
+
+//Directs to projects page
+app.get('/projects/:pName', function (req, res, next) {
   //Scan projects folder to get list of projects
-  fs.readdir('./public/projects', function (error, data) {
-    //Throw error if things go wrong
-    if (error) {
-      res.status(500).send(error);
-      return;
-    }
-    //Get the extra info on each project
-    var projects = {}
-    data.forEach(function (entry) {
-      projects[entry] = require("./public/projects/" + entry + "/info.json")
-    })
-    res.render('projects', { site: site, title: 'My Projects', url: req.url, projects: projects })
-  });
+  var project = utils.getProject(req.params.pName);
+  if (project != undefined) {
+    res.render('project', { site: site, title: project.name, url: req.url, project: project })
+    return;
+  }
+  next();
 })
 
 //Static content handling
-app.use('/css', express.static('public/css'))
-app.use('/js', express.static('public/js'))
-app.use('/fonts', express.static('public/fonts'))
-app.use('/images', express.static('public/images'))
-app.use('/files', express.static('public/files'))
+app.use('/css', express.static('public/css'));
+app.use('/js', express.static('public/js'));
+app.use('/fonts', express.static('public/fonts'));
+app.use('/images', express.static('public/images'));
+app.use('/files', express.static('public/files'));
 
 //Some 404 handling
 app.get("/*", function (req, res, next) {

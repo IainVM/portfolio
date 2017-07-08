@@ -8,17 +8,19 @@
   },
   "repository": {
     "type": "git",
-    "url": "github.com/IainVM/portfolio"
+    "url": "git+https://github.com/IainVM/portfolio.git"
   },
-  "keywords": [
-    "website"
-  ],
   "author": "Iain Majer",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/IainVM/portfolio/issues"
+  },
+  "homepage": "https://github.com/IainVM/portfolio#readme",
   "dependencies": {
     "express": "^4.15.3",
-    "fs": "0.0.1-security",
+    "glob": "^7.1.2",
     "moment": "^2.18.1",
+    "path": "^0.12.7",
     "pug": "^2.0.0-rc.2"
   }
 }
