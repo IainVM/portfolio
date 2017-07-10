@@ -19,7 +19,9 @@ app.get('/', function (req, res) {
 
 //About Me page 
 app.get('/about', function (req, res) {
-  res.render('about', { site: site, title: 'About Me', url: req.url })
+  var languages = utils.getLanguages();
+  var tools = utils.getTools();
+  res.render('about', { site: site, title: 'About Me', url: req.url, langs: languages, tools: tools })
 })
 
 //About Me page 

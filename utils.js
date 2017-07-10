@@ -20,3 +20,31 @@ exports.getProject = function(pName) {
 
     return projects[pName];
 };
+
+exports.getLanguages = function() {
+    var projects = exports.getProjects();
+
+    var languages = {};
+
+    for (project in projects){
+        for (language in projects.languages){
+            languages[language] += 1;
+        }
+    }
+
+    return languages;
+}
+
+exports.getTools = function() {
+    var projects = exports.getProjects();
+
+    var tools = {};
+
+    for (project in projects){
+        for (tool in projects.tools){
+            tools[tool] += 1;
+        }
+    }
+
+    return tools;
+}

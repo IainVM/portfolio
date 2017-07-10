@@ -1,7 +1,9 @@
 //- Main template used across the entire site
-html
+html(lang="en")
   block vars
   head
+    meta(http-equiv="Content-Type", content="text/html; charset=UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1")
     //- Site title
     title #{site.name} - #{title}
 

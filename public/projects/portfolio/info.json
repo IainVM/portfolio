@@ -2,5 +2,19 @@
     "name":"Portfolio",
     "version":"1.0",
     "description":"This is a website to showcase my personal projects",
-    "git":"https://github.com/iainvm/portfolio"
+    "git":"https://github.com/iainvm/portfolio",
+    "languages":[
+        "JS",
+        "HTML",
+        "SCSS",
+        "pug",
+        "JSON"
+    ],
+    "tools":[
+        "Node",
+        "npm",
+        "express",
+        "nginx",
+        "linux"
+    ]
 }
