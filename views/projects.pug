@@ -4,12 +4,12 @@ block style
     link(rel="stylesheet", href="/css/projects.css")
 
 block content
-    div(class="grid")
+    div.grid
         each project,dir in projects
-            a(href="/projects/"+dir class="")
-                div(class="card blue-grey darken-1 grid-item")
-                    div(class="card-content white-text")
-                        span(class="card-title") #{project.name} - #{project.version}
+            a(href="/projects/"+dir)
+                div.card.lbacking.grid-item
+                    div.card-content.dtext
+                        span.card-title #{project.name} - #{project.version}
                         p #{project.description}
 
 
