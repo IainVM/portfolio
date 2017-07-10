@@ -74,6 +74,6 @@ app.get("/*", function (req, res, next) {
 
 //Set the app to listen
 //TODO: change to better port, or use sockets
-app.listen(80, function () {
-  console.log('Example app listening on port 80')
+app.listen(9001, function () {
+  console.log('[Iainvm.tech] Portfolio app listening on port 9001')
 })
