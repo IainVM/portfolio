@@ -8,27 +8,27 @@ block style
 
 block content
     //- Description of myself
-    div(class="row")
-        div(class="col s12")
-            div(class="card blue-grey")
-                div(class="card-content white-text")
-                    span(class="card-title") Main Information
-                    p I am #{site.contact.first_name} a #{age} year old Computer Scientist, graduated from Cardiff University, and enjoy spending my time tinkering with code and concepts.
+    div.row
+        div.col.s12
+            div.card.lbacking
+                div.card-content
+                    span.card-title.dtext Main Information
+                    p.atext I am #{site.contact.first_name} a #{age} year old Computer Scientist, graduated from Cardiff University, and enjoy spending my time tinkering with code and concepts.
     
     //- Contact Information
-    div(class="row")
-        div(class="col s12")
-            div(class="card blue-grey darken-2")
-                div(class="card-content white-text")
-                    span(class="card-title") Contant Information
-                div(class="card-action")
-                    ul(class="collapsible" data-collapsible="accordion")
+    div.row
+        div.col.s12
+            div.card.lbacking
+                div.card-content
+                    span.dtext.card-title Contant Information
+                div.card-action
+                    ul.collapsible(data-collapsible="accordion")
                         li
-                            div(class="collapsible-header")
-                                i(class="material-icons") email
+                            div.collapsible-header.sdark
+                                i.material-icons email
                                 | Email
-                            div(class="collapsible-body")
-                                span(class="valign-wrapper")
-                                    a(class="black-text valign-wrapper" href="mailto:#{site.contact.email}")
-                                        i(class="material-icons") send
+                            div.collapsible-body
+                                span.valign-wrapper
+                                    a.dtext.valign-wrapper(href="mailto:#{site.contact.email}")
+                                        i.material-icons send
                                         | #{site.contact.email}

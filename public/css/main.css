@@ -1,17 +1,52 @@
+.pmain {
+  background-color: #26a69a;
+  color: #212121; }
+
+.plight {
+  background-color: #64d8cb;
+  color: #212121; }
+
+.pdark {
+  background-color: #00766c;
+  color: #eee; }
+
+.smain {
+  background-color: #78909c;
+  color: #212121; }
+
+.slight {
+  background-color: #a7c0cd;
+  color: #212121; }
+
+.sdark {
+  background-color: #4b636e;
+  color: #eee; }
+
+.backing {
+  background-color: #E1E2E1; }
+
+.lbacking {
+  background-color: #F5F5F6; }
+
+.dtext {
+  color: #212121 !important; }
+
+.atext {
+  color: #4b636e; }
+
+.ltext {
+  color: #eee !important; }
+
 .nav-wrapper, #main, footer {
   padding-left: 300px; }
 
 body {
   display: flex;
   min-height: 100vh;
-  flex-direction: column;
-  background-color: #4db6ac; }
+  flex-direction: column; }
 
-.button-collapse {
-  color: #26a69a; }
-
-.shaded {
-  color: rgba(0, 0, 0, 0.5) !important; }
+.socicon-github {
+  line-height: 56px; }
 
 nav .brand-logo {
   color: #444;

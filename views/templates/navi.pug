@@ -1,14 +1,14 @@
 //- Side navigation bar for the website
 
-ul(id="slide-out" class="fixed side-nav")
+ul#slide-out.fixed.side-nav
     li
-        div(class="userView")
-            div(class="background")
+        div.userView
+            div.background
                 img(src="/images/test.jpg")
             a(href="#")
-                img( class="circle" src="/images/prof.jpg")
+                img.circle(src="/images/prof.jpg")
             a(href="#")
-                span(class="white-text name") #{site.contact.name}
+                span.dtext.name #{site.contact.name}
             a(href="mailto:#{site.contact.email}")
-                span(class="white-text email") #{site.contact.email}
+                span.dtext.email #{site.contact.email}
     include buttons

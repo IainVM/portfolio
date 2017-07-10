@@ -1,6 +1,6 @@
 //- The buttons that will display on the side navigation bar
 each button in site.navi
     li
-        a.waves-effect(class=(url == button.url ? "grey lighten-1" : "") href=button.url)
-            i.material-icons=button.icon
+        a.waves-effect(class=(url == button.url ? "smain ltext" : "dtext") href=button.url)
+            i.material-icons.left(class=(url == button.url ? "ltext" : "dtext"))=button.icon
             | #{button.label}
