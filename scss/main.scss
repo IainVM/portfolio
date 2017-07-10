@@ -77,10 +77,11 @@ nav{
 
 #main {
     flex: 1 0 auto;
+    width: 90%;
 }
 
-.container {
-    width: 90%;
+.container, .parallax-container{
+    width:100%;
 }
 
 footer.page-footer {

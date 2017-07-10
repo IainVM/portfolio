@@ -2,6 +2,11 @@
     "name": "IainVM.tech",
     "navi": [
         {
+            "url": "/",
+            "icon": "home",
+            "label": "Home"
+        },
+        {
             "url": "/about",
             "icon": "info",
             "label": "About Me"

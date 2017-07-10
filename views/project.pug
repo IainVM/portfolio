@@ -4,17 +4,29 @@ block style
     link(rel="stylesheet", href="/css/project.css")
 
 block content
-  div.parallax-container
+  div#index-banner.parallax-container
+    div.section
+      div.container
+        h1.header.center.ltext #{project.name}
+        div.row.center
+          h5.header.col.s12.light #{project.description}
     div.parallax
-      img(src='/images/background1.jpg')
-  div.section.white
-    div.row.container
-      h2.header Parallax
-      p.grey-text.text-darken-3.lighten-3
-        | Parallax is an effect where the background content or image in this case, is moved at a different speed than the foreground content while scrolling.
+      img(src="/images/background1.jpg")
+  div.container
+    div.section.lbacking
+      div.container
+        h2.header.dtext.center Project Stats
+        p.atext
+          | This area is going to break down the languages and tools used in the project
   div.parallax-container
     div.parallax
       img(src='/images/background2.jpg')
+  div.container
+    div.section.lbacking
+      div.container
+        h2.header.dtext.center Project Blog
+        p.atext
+          | This area will show various posts I've made about this project, usually about problems I faced and how I solved them
 
 
 block scripts
